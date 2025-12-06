@@ -1,8 +1,8 @@
-# InvoiceAI
+# FintractAi
 
 AI-powered invoice data extraction using **Cerebras AI (Llama 3.1 70B)** and **EasyOCR**. Upload an invoice image or PDF, and let the AI extract all the important information with complete accuracy.
 
-## 🌟 Features
+##  Features
 
 - **AI-Powered Extraction**: Uses Cerebras Llama 3.1 70B for intelligent invoice analysis and ALL calculations
 - **OCR Support**: Extract text from PDF, JPG, and PNG files using EasyOCR
@@ -11,7 +11,7 @@ AI-powered invoice data extraction using **Cerebras AI (Llama 3.1 70B)** and **E
 - **Structured Output**: Get clean JSON data plus a formatted invoice summary
 - **Multi-Currency Support**: Handles various currencies and tax formats (GST, VAT, Sales Tax)
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 invai/
@@ -40,7 +40,7 @@ invai/
   - **Linux**: `sudo apt-get install poppler-utils`
   - **macOS**: `brew install poppler`
 
-## 📦 Installation
+##  Installation
 
 ### 1. Clone or Download the Project
 
@@ -85,7 +85,7 @@ Edit `.env` and add your Cerebras API key:
 CEREBRAS_API_KEY=your_actual_api_key_here
 ```
 
-## ▶️ Running the Application
+##  Running the Application
 
 ### Start the Backend Server
 
@@ -121,7 +121,7 @@ python -m http.server 3000
 
 Then open `http://localhost:3000`
 
-## 🧪 Testing the API
+##  Testing the API
 
 ### Using cURL
 
@@ -139,7 +139,7 @@ curl -X POST "http://localhost:8000/api/invoice/extract" \
 3. Click "Extract Invoice"
 4. View the formatted summary and raw JSON output
 
-## 📋 API Documentation
+##  API Documentation
 
 ### POST `/api/invoice/extract`
 
@@ -183,7 +183,7 @@ Extract invoice data from an uploaded file.
 
 Check API health and configuration status.
 
-## 🎯 How It Works
+##  How It Works
 
 1. **Upload**: User uploads an invoice (PDF or image)
 2. **OCR**: EasyOCR extracts text from the document
@@ -197,7 +197,7 @@ Check API health and configuration status.
 
 > **Important**: The backend does NO business logic or calculations—everything is done by the AI!
 
-## 🛠️ Architecture
+##  Architecture
 
 ```mermaid
 graph LR
@@ -214,7 +214,7 @@ graph LR
     B --> A
 ```
 
-## 🔧 Troubleshooting
+##  Troubleshooting
 
 ### "CEREBRAS_API_KEY not found"
 Make sure you've created a `.env` file in the project root with your API key.
@@ -234,7 +234,7 @@ The backend is configured to allow requests from `localhost:8000`, `localhost:30
 ### OCR is slow or not working
 EasyOCR downloads language models on first run. Subsequent runs will be faster. Ensure you have a stable internet connection for the first run.
 
-## 🎨 Technology Stack
+##  Technology Stack
 
 **Backend:**
 - FastAPI - Modern Python web framework
@@ -249,7 +249,7 @@ EasyOCR downloads language models on first run. Subsequent runs will be faster. 
 - Vanilla JavaScript - No frameworks
 - Inter Font - Typography
 
-## 📝 Future Enhancements
+##  Future Enhancements
 
 - [ ] Multi-page invoice support
 - [ ] Batch processing multiple invoices
@@ -259,11 +259,11 @@ EasyOCR downloads language models on first run. Subsequent runs will be faster. 
 - [ ] User authentication
 - [ ] Additional language support
 
-## 📄 License
+##  License
 
 This project is provided as-is for educational and commercial use.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Powered by [Cerebras AI](https://cerebras.ai/)
 - OCR by [EasyOCR](https://github.com/JaidedAI/EasyOCR)
@@ -271,4 +271,4 @@ This project is provided as-is for educational and commercial use.
 
 ---
 
-**Made by Batman**
+**Made by Shaheryar Farooq**
